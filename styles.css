@@ -92,19 +92,28 @@ button {
   background: rgba(4, 6, 5, 0.58);
 }
 
+.brand-logo {
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(159, 230, 176, 0.4);
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  min-height: 44px;
-  padding: 7px 12px 7px 7px;
-  border-radius: 10px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  transition: background 180ms ease, border-color 180ms ease;
+  justify-content: center;
+  min-height: 84px;
+  padding: 4px;
+  border-radius: 50%;
+  background: rgba(4, 6, 5, 0.58);
+  border: 1px solid rgba(151, 179, 160, 0.16);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 }
 
 .brand:hover {
+  transform: scale(1.05);
   border-color: rgba(217, 246, 223, 0.28);
   background: rgba(217, 246, 223, 0.045);
 }
@@ -129,16 +138,26 @@ button {
 }
 
 .nav-links a {
-  padding: 10px 12px;
+  padding: 10px 16px;
   border-radius: 999px;
   color: var(--muted);
   font-size: 14px;
-  transition: color 180ms ease, background 180ms ease;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: all 200ms ease;
 }
 
 .nav-links a:hover {
   color: var(--text);
-  background: rgba(159, 230, 176, 0.08);
+  background: rgba(159, 230, 176, 0.1);
+  transform: translateY(-1px);
+}
+
+.nav-links a.active {
+  color: var(--green);
+  background: rgba(159, 230, 176, 0.14);
+  border-color: rgba(159, 230, 176, 0.3);
+  box-shadow: 0 0 15px rgba(159, 230, 176, 0.1);
 }
 
 .nav-actions {
@@ -1141,5 +1160,274 @@ h3 {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
+  }
+}
+
+/* Transparency & Roadmap Section */
+.transparency-roadmap {
+  padding: 72px 0 40px;
+}
+
+.transparency-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.transparency-card,
+.tokenomics-card,
+.checklist-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(10, 15, 13, 0.76);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.transparency-body,
+.tokenomics-body,
+.checklist-body {
+  padding: 22px;
+  background:
+    repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 6px),
+    rgba(3, 5, 4, 0.72);
+}
+
+.transparency-body p {
+  margin: 0;
+  color: #cbd4ce;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.tokenomics-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+}
+
+.tokenomics-list div {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.tokenomics-list dt {
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.tokenomics-list dd {
+  margin: 0;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.checklist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  color: #cbd4ce;
+  line-height: 1.4;
+}
+
+.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--green);
+  font-weight: 900;
+}
+
+.checklist-card.warning li::before {
+  content: "×";
+  color: var(--red);
+}
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 42px;
+}
+
+.roadmap-phase {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(10, 15, 13, 0.76);
+}
+
+.phase-header {
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--green);
+  color: var(--text);
+  font-family: var(--display);
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.phase-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.phase-list li {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.phase-list li::before {
+  content: "— ";
+  color: var(--green);
+}
+
+.transparency-footer {
+  padding: 24px;
+  border: 1px solid rgba(217, 182, 106, 0.24);
+  border-radius: 8px;
+  background: rgba(217, 182, 106, 0.04);
+  text-align: center;
+}
+
+.transparency-footer p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+@media (max-width: 920px) {
+  .transparency-grid,
+  .roadmap-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Transparency Page Specifics */
+.transparency-page {
+  padding-top: 40px;
+}
+
+.transparency-page .section-heading h1 {
+  margin-bottom: 24px;
+}
+
+/* Activity Log / Timeline */
+.activity-log {
+  margin-bottom: 48px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(10, 15, 13, 0.76);
+  overflow: hidden;
+}
+
+.timeline-container {
+  display: grid;
+  gap: 0;
+  padding: 0;
+  background:
+    repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 6px),
+    rgba(3, 5, 4, 0.72);
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 24px;
+  padding: 24px;
+  border-bottom: 1px solid var(--line);
+  transition: background 180ms ease;
+}
+
+.timeline-item:last-child {
+  border-bottom: 0;
+}
+
+.timeline-item:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.timeline-date {
+  color: var(--cyan);
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: var(--text);
+}
+
+.timeline-content p {
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.timeline-status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.completed .timeline-status {
+  background: rgba(159, 230, 176, 0.1);
+  color: var(--green);
+  border: 1px solid rgba(159, 230, 176, 0.2);
+}
+
+.planned .timeline-status {
+  background: rgba(217, 182, 106, 0.1);
+  color: var(--amber);
+  border: 1px solid rgba(217, 182, 106, 0.2);
+}
+
+.completed .timeline-date::before {
+  content: "● ";
+  color: var(--green);
+}
+
+.planned .timeline-date::before {
+  content: "○ ";
+  color: var(--amber);
+}
+
+@media (max-width: 600px) {
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  
+  .timeline-date {
+    margin-bottom: 4px;
   }
 }

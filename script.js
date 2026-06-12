@@ -64,6 +64,18 @@ function tickTerminal() {
   setTimeout(tickTerminal, 260);
 }
 
+const navLinks = document.querySelectorAll(".nav-links a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    // Only handle anchor links on the same page
+    if (link.getAttribute("href").startsWith("#")) {
+      navLinks.forEach((l) => l.classList.remove("active"));
+      link.classList.add("active");
+    }
+  });
+});
+
 tickTerminal();
 
 terminalButtons.forEach((button) => {
