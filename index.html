@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SYNTHOLGUY is a simple community memecoin hub on Solana. Follow the signal, join the memes, and wait for the official buy link.">
+  <title>SYNTHOLGUY | Community Terminal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="SYNTHOLGUY home">
+        <span class="brand-mark">SG</span>
+        <span>SYNTHOLGUY</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#top">Home</a>
+        <a href="#signals">Signals</a>
+        <a href="#memes">Memes</a>
+        <a href="#manifesto">Manifesto</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="x-link" href="https://x.com/syntholguyonsol" target="_blank" rel="noopener noreferrer" aria-label="SYNTHOLGUY on X">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18.9 2.8h3.3l-7.3 8.4 8.6 10h-6.7l-5.3-6.2-6 6.2H2.2l7.8-8.9L1.8 2.8h6.9l4.8 5.6 5.4-5.6Zm-1.2 16.6h1.8L7.7 4.5H5.8l11.9 14.9Z"/>
+          </svg>
+        </a>
+        <button class="nav-cta buy-unavailable" type="button" data-tooltip="Unavailable yet">Buy SYNTHOLGUY</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Solana memecoin / community terminal</p>
+        <h1>SYNTHOLGUY</h1>
+        <p class="hero-lede">
+          SYNTHOLGUY is a memecoin community on Solana. No complicated story:
+          we post memes, gather people, launch clean, and keep every official update in one place.
+        </p>
+
+        <div class="hero-actions" aria-label="Primary actions">
+          <button class="button primary buy-unavailable" type="button" data-tooltip="Unavailable yet">Buy SYNTHOLGUY</button>
+          <a class="button ghost" href="#terminal">Open Terminal</a>
+        </div>
+
+        <dl class="quick-stats" aria-label="SYNTHOLGUY quick stats">
+          <div>
+            <dt>Contract</dt>
+            <dd>Pending</dd>
+          </div>
+          <div>
+            <dt>Supply</dt>
+            <dd>1B SGUY</dd>
+          </div>
+          <div>
+            <dt>Status</dt>
+            <dd>Pre-launch</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-terminal-wrap" id="terminal">
+        <div class="terminal-card">
+          <div class="terminal-topbar">
+            <div class="window-controls" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <span class="terminal-title">syntholguy@node:~/signal</span>
+            <span class="terminal-status">ONLINE</span>
+          </div>
+
+          <div class="terminal-screen" aria-label="SYNTHOLGUY terminal screen">
+            <pre class="ascii-logo" aria-hidden="true">
+   ____  _  _  _  _  _____  _   _  ___  _
+  / ___|| || || \| ||_   _|| |_| |/ _ \| |
+  \___ \| || || .` |  | |  |  _  | (_) | |
+   ___) |__   _| |\ |  | |  | | | |\__, | |___
+  |____/   |_| |_| \_|  |_|  |_| |_|  /_/|_____|
+            </pre>
+            <div class="terminal-lines">
+              <p><span class="prompt">$</span> boot syntholguyonsol</p>
+              <p><span class="muted">[ok]</span> website is live</p>
+              <p><span class="muted">[ok]</span> X account linked</p>
+              <p><span class="prompt">$</span> check --official-links</p>
+              <p class="output">buy link: <strong>not live yet</strong></p>
+              <p class="output">contract: <strong>will be posted here</strong></p>
+              <p><span class="prompt">$</span> <span id="typed-command">buy --syntholguy</span><span class="caret"></span></p>
+              <div class="terminal-response" id="terminal-response" aria-live="polite">
+                <p>Run a command below for the simple version.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="terminal-command-bar" aria-label="Terminal command shortcuts">
+            <button type="button" data-terminal-command="status">status</button>
+            <button type="button" data-terminal-command="links">links</button>
+            <button type="button" data-terminal-command="contract">contract</button>
+            <button type="button" data-terminal-command="risk">risk</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="SYNTHOLGUY signal ticker">
+      <div class="ticker-track">
+        <span>SYNTHOLGUY ONLINE</span>
+        <span>OFFICIAL LINKS ONLY</span>
+        <span>FOLLOW THE X</span>
+        <span>COMMUNITY FIRST</span>
+        <span>CONTRACT PENDING</span>
+        <span>SYNTHOLGUY ONLINE</span>
+        <span>OFFICIAL LINKS ONLY</span>
+        <span>FOLLOW THE X</span>
+        <span>COMMUNITY FIRST</span>
+        <span>CONTRACT PENDING</span>
+      </div>
+    </section>
+
+    <section class="warning-strip section-shell" aria-label="Official link warning">
+      <div>
+        <span class="warning-label">Important</span>
+        <p>If it is not on this website or the official X account, ignore it.</p>
+      </div>
+      <a href="https://x.com/syntholguyonsol" target="_blank" rel="noopener noreferrer">Check official X</a>
+    </section>
+
+    <section class="terminal-lab section-shell" id="signals">
+      <div class="section-heading compact-heading">
+        <p class="eyebrow">What this is</p>
+        <h2>Simple rules. No mystery. No guessing.</h2>
+      </div>
+
+      <div class="terminal-grid">
+        <article class="terminal-mini">
+          <div class="terminal-mini-top">
+            <span>what.is.this</span>
+            <strong>plain</strong>
+          </div>
+          <div class="terminal-mini-body">
+            <p><span>$</span> explain --syntholguy</p>
+            <p>SYNTHOLGUY is a meme coin community.</p>
+            <p>The coin lives on Solana.</p>
+            <p>The culture lives on X.</p>
+          </div>
+        </article>
+
+        <article class="terminal-mini">
+          <div class="terminal-mini-top">
+            <span>how.to.join</span>
+            <strong>easy</strong>
+          </div>
+          <div class="terminal-mini-body">
+            <p><span>$</span> join --community</p>
+            <p>[01] follow the official X</p>
+            <p>[02] share the memes</p>
+            <p>[03] wait for official buy info</p>
+          </div>
+        </article>
+
+        <article class="terminal-mini">
+          <div class="terminal-mini-top">
+            <span>safe.links</span>
+            <strong>important</strong>
+          </div>
+          <div class="terminal-mini-body">
+            <p><span>$</span> verify --before-buy</p>
+            <p>contract=<strong>posted here first</strong></p>
+            <p>buy=<strong>official link only</strong></p>
+            <p>DM links=<strong>ignore</strong></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="meme-wall section-shell" id="memes">
+      <div class="section-heading compact-heading">
+        <p class="eyebrow">Community feed</p>
+        <h2>The meme machine is warming up.</h2>
+      </div>
+
+      <div class="meme-grid">
+        <article class="meme-card">
+          <span>meme.deploy</span>
+          <h3>Post the chart later. Post the meme now.</h3>
+          <p>SYNTHOLGUY grows when people understand it fast and can repeat it even faster.</p>
+        </article>
+        <article class="meme-card">
+          <span>reply.raid</span>
+          <h3>See SYNTHOLGUY? Reply with signal.</h3>
+          <p>No spam, no fake promises. Just visible community activity around the official X.</p>
+        </article>
+        <article class="meme-card">
+          <span>crew.log</span>
+          <h3>Early users become the lore.</h3>
+          <p>Follow, share, save the official links, and help new people avoid fake contract traps.</p>
+        </article>
+        <article class="meme-card">
+          <span>terminal.note</span>
+          <h3>Simple beats complicated.</h3>
+          <p>One name, one X, one official site. If someone needs a map to join, we failed.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="manifesto section-shell" id="manifesto">
+      <div class="manifesto-panel">
+        <div class="manifesto-copy">
+          <p class="eyebrow">Manifesto</p>
+          <h2>A memecoin community should be easy to understand.</h2>
+          <p>
+            SYNTHOLGUY is not trying to sound smarter than it is. The plan is simple:
+            keep the links clean, make the memes obvious, and let the community carry the signal.
+          </p>
+        </div>
+
+        <div class="manifesto-terminal" aria-label="SYNTHOLGUY manifesto rules">
+          <div class="terminal-mini-top">
+            <span>manifesto.rules</span>
+            <strong>v1</strong>
+          </div>
+          <ol>
+            <li>
+              <span>01</span>
+              <div>
+                <h3>One source</h3>
+                <p>This website and the official X are the source. Random links are noise.</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Simple actions</h3>
+                <p>Follow, post, reply, meme, and help new people understand the basics fast.</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>No fake urgency</h3>
+                <p>Buy is unavailable until the real market is ready. No guessing, no DM links.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="console-strip section-shell" aria-label="Terminal commands">
+      <div class="mini-terminal">
+        <p><span>$</span> syntholguy --mission</p>
+        <p>make the meme easy to join and hard to ignore.</p>
+      </div>
+      <div class="mini-terminal">
+        <p><span>$</span> syntholguy --contract</p>
+        <p>the contract address is pending and will be posted here.</p>
+      </div>
+      <div class="mini-terminal">
+        <p><span>$</span> syntholguy --risk</p>
+        <p>memecoins are risky. this is community entertainment, not financial advice.</p>
+      </div>
+    </section>
+
+    <section class="faq section-shell" id="faq">
+      <div class="section-heading compact-heading">
+        <p class="eyebrow">FAQ</p>
+        <h2>No hidden rules.</h2>
+      </div>
+
+      <div class="faq-grid">
+        <details open>
+          <summary>Is SYNTHOLGUY live?</summary>
+          <p>The website and X are live. Buying is not available yet.</p>
+        </details>
+        <details>
+          <summary>Where is the contract?</summary>
+          <p>The contract is pending. When it is ready, it will be shown clearly on this website and official X.</p>
+        </details>
+        <details>
+          <summary>Where do I follow updates?</summary>
+          <p>The community hub is X for now: @syntholguyonsol.</p>
+        </details>
+        <details>
+          <summary>How do I avoid fake links?</summary>
+          <p>Use this site and the official X only. Ignore DMs, copycat pages, and random comments with links.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="join section-shell" id="buy">
+      <div class="join-panel">
+        <div>
+          <p class="eyebrow">Buy</p>
+          <h2>Buy SYNTHOLGUY</h2>
+          <p>
+            Buying is not available yet. When the official pair is live, this page will show the
+            correct SYNTHOLGUY market link. Until then, ignore random links, DMs, and copycat pages.
+          </p>
+        </div>
+
+        <div class="social-actions" aria-label="Social links">
+          <button class="button primary buy-unavailable" type="button" aria-label="Buy SYNTHOLGUY unavailable" data-tooltip="Unavailable yet">Buy SYNTHOLGUY</button>
+          <a class="button ghost" href="https://x.com/syntholguyonsol" target="_blank" rel="noopener noreferrer" aria-label="SYNTHOLGUY X link">Follow X</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>SYNTHOLGUY © 2026</span>
+    <button class="footer-buy buy-unavailable" type="button" data-tooltip="Unavailable yet">Buy SYNTHOLGUY</button>
+    <span>Memecoin community. Entertainment only. DYOR.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
